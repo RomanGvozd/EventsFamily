@@ -1,0 +1,41 @@
+.home{
+    min-width: 100%;
+    background-image: url(./Background_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.home__title{
+    width: 260px;
+    font-family: Alex Brush;
+    font-size: 45px;
+    line-height: 56px;
+    margin-top: 70px;
+}
+.home__sub-title{
+    width: 390px;
+    font-size: 35px;
+    line-height: 114.06%;
+    letter-spacing: 0.1em;
+    margin-top: 10px;
+}
+.home__text{
+    width: 300px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.home__btn{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    width: 206px;
+    height: 53px;
+    background: #1A182F;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
