@@ -1,0 +1,94 @@
+.services {
+    min-width: 100%;
+    background-image: url(./Images/Background_Services.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s;
+
+    .services__logo1 {
+        font-family: AnastasiaScriptC;
+        font-size: 50px;
+        line-height: 65px;
+
+    }
+
+    .services__logo2 {
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 0.13em;
+
+    }
+
+    .services__wrapper {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+
+        .services__wrapper1 {
+            width: 48%;
+            height: 100%;
+
+            .wrapper1__image {
+                width: 100%;
+                height: 70%;
+                background-image: url(./Images/Services_image_1.png);
+                background-size: cover;
+
+            }
+
+            .wrapper1__logo {
+                font-size: 25px;
+                line-height: 30px;
+                letter-spacing: 0.05em;
+
+            }
+
+            .wrapper1__list-item {
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.05em;
+                list-style-type: unset;
+                margin-left: 17px;
+
+            }
+
+        }
+
+        .services__wrapper2 {
+            width: 48%;
+            height: 100%;
+
+            .wrapper2__image {
+                width: 100%;
+                height: 70%;
+                background-image: url(./Images/Services_image_2.png);
+                background-size: cover;
+
+            }
+
+            .wrapper2__logo {
+                font-size: 25px;
+                line-height: 30px;
+                letter-spacing: 0.05em;
+
+            }
+
+            .wrapper2__list-item {
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.05em;
+                list-style-type: unset;
+                margin-left: 17px;
+
+            }
+
+        }
+
+    }
+
+}

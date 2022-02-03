@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
 
-import Home from '../Home/Home';
-import Services from '../Services/Services';
-import Benefits from '../Benefits/Benefits';
-import Contacts from '../Contacts/Contacts';
+import Home from '../Content/ContentPages/Home/Home';
+import Services from '../Content/ContentPages/Services/Services';
+import Benefits from '../Content/ContentPages/Benefits/Benefits';
+import Contacts from '../Content/ContentPages/Contacts/Contacts';
 
-import './Slider.css';
+import './Slider.scss';
 
 function Slider() {
 

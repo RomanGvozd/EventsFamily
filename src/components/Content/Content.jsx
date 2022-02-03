@@ -1,11 +1,11 @@
 import React from 'react';
 // import { Routes, Route } from "react-router-dom";
 
-import LeftNav from '../LeftNav/LeftNav';
-import RightNav from '../RightNav/RightNav';
+import LeftNav from '../Nav/LeftNav/LeftNav';
+import RightNav from '../Nav/RightNav/RightNav';
 import Slider from '../Slider/Slider';
 
-import './Content.css';
+import './Content.scss';
 
 function Content() {
 

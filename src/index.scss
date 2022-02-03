@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,13 +6,23 @@
   font-style: normal;
   font-weight: normal;
   color: #1A182F;
+
 }
-a{
+
+a {
   text-decoration: none;
+
 }
+
 li {
   list-style-type: none;
+
  }
-button{
+
+button {
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }

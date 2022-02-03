@@ -1,0 +1,36 @@
+.content__nav {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .nav__item {
+        transform: rotate(-90deg);
+        margin: 80px 0;
+        position: relative;
+
+        &:hover {
+            font-weight: bold;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 33px;
+            height: 33px;
+            background-color: #d5f1fa;
+            border-radius: 50%;
+            left: -20px;
+            top: -5px;
+            z-index: -1;
+        }
+
+        &:hover::after {
+            transform: rotate(90deg);
+            background: radial-gradient(190.91% 190.91% at 43.94% 12.12%, rgba(213, 241, 250, 0.6) 23.6%, rgba(26, 24, 47, 0.6) 64.47%);
+        }
+    }
+
+}
+

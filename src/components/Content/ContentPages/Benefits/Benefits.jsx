@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Benefits.css';
+import './Benefits.scss';
 
 function Benefits() {
     return (

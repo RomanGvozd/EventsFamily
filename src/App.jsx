@@ -6,7 +6,7 @@ import Content from './components/Content/Content';
 import ModalForm from './components/ModalForm/ModalForm';
 import Modal from './components/Modal/Modal';
 
-import './App.css';
+import './App.scss';
 
 function App() {
 
@@ -22,6 +22,10 @@ function App() {
     setModalForm(false);
   }
 
+  const arr = [2, 34, 3, 8, 1, 5, 4]
+
+  console.log(arr.sort().toString())
+
   return (
     <BrowserRouter>
     {modal && <Modal/>}
@@ -32,7 +36,6 @@ function App() {
         />
         <Content/>
       </main>
-    
     </BrowserRouter>
   );
 }

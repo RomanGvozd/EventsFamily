@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link} from 'react-router-dom';
-import './Header.css';
+import { NavLink} from 'react-router-dom';
+import './Header.scss';
 
 function Header({openModalForm}) {
 
@@ -8,33 +8,33 @@ function Header({openModalForm}) {
         <header className='header'>
             <nav className='header__nav'>
                 <ul className='nav__wrapper'>
-                    <li className='nav__wrapper-item'>
+                    <li>
                         <a className='nav__item' href='/'>
-                            <Link to="/">
+                            <NavLink to="/">
                                 <div className='nav__logo'>
                                 </div>
-                            </Link>
+                            </NavLink>
                         </a>
                     </li>
-                    <li className='nav__wrapper-item'>
+                    <li>
                         <a className='nav__item' href='/services'>
-                            <Link to="/services">
+                            <NavLink to="/services">
                                 УСЛУГИ
-                            </Link>
+                            </NavLink>
                         </a>
                     </li>
-                    <li className='nav__wrapper-item'>
+                    <li>
                         <a className='nav__item' href='/benefits'>
-                            <Link to="/benefits">
+                            <NavLink to="/benefits">
                                 ПРЕИМУЩЕСТВА
-                            </Link>
+                            </NavLink>
                         </a>
                     </li>
-                    <li className='nav__wrapper-item'>
+                    <li>
                         <a className='nav__item' href='/contacts'>
-                            <Link to="/contacts">
+                            <NavLink to="/contacts">
                                 КОНТАКТЫ
-                            </Link>
+                            </NavLink>
                         </a>
                     </li>
                 </ul>
