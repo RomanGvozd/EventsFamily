@@ -1,5 +1,6 @@
 .contacts {
-    min-width: 100%;
+    width: 100%;
+    height: 100%;
     background-image: url(./Images//Background_Contacts.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,7 +11,8 @@
     transition: 1s;
 
     .contacts__logo1 {
-        font-family: AnastasiaScriptC;
+        font-family: 'AnastasiaScript', arial;
+        font-weight: normal; 
         font-size: 50px;
         line-height: 65px;
 
@@ -18,6 +20,7 @@
 
     .contacts__logo2 {
         font-size: 30px;
+        font-weight: normal; 
         line-height: 36px;
         letter-spacing: 0.13em;
 
@@ -116,6 +119,17 @@
                 border: none;
                 padding: 0 10px;
 
+                &:hover {
+                    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 24px rgba(51, 51, 51, 0.24);
+    
+                }
+    
+                &:focus {
+                    outline: none;
+                    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 24px rgba(51, 51, 51, 0.24);
+    
+                }
+
             }
 
             .contacts-form__button {
@@ -124,6 +138,17 @@
                 font-size: 15px;
                 line-height: 18px;
                 color: #FFFFFF;
+                transition: 0.3s;
+
+                &:hover {
+                    background: rgba(33, 30, 61, 0.8);
+
+                }
+
+                &:active {
+                    background: #1E1950;
+
+                }
 
             }
 

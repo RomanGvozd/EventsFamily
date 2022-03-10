@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Contacts.scss';
 
-function Contacts() {
+function Contacts({openModal}) {
     return (
         <main className='contacts'>
             <h1 className='contacts__logo1'>
@@ -26,7 +26,7 @@ function Contacts() {
                         <div className='contacts__email-item contacts__item'></div>eventsxfamily@gmail.com
                     </a>
                 </div>
-                <form className='contacts-form'>
+                <div className='contacts-form'>
                     <p className='contacts-form__text '>
                         Оставьте свои контакты, мы сами с Вами свяжемся!
                     </p>
@@ -37,14 +37,20 @@ function Contacts() {
                         <option>
                             Мероприятие
                         </option>
+                        <option>
+                            Корпоративы
+                        </option>
+                        <option>
+                            Тимбилдинги
+                        </option>
                     </select>
                     <button 
                     className='contacts-form__button contacts-form_item'
-                    // onClick={openModal}
+                    onClick={openModal}
                     >
                         Свяжитесь со мной
                     </button>
-                </form>
+                </div>
             </div>
         </main>
     );

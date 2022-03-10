@@ -4,6 +4,7 @@ import './Benefits.scss';
 
 function Benefits() {
     return (
+        <>
         <main className='benefits'>
             <h1 className='benefits__logo1'>
                 Наши
@@ -43,7 +44,10 @@ function Benefits() {
                     </p>
                 </div>
             </div>
+            
         </main>
+        </>
+        
     );
 }
 

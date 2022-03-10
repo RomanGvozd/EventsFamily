@@ -1,8 +1,12 @@
 import React from 'react';
-import { NavLink} from 'react-router-dom';
+import { NavLink, useLocation} from 'react-router-dom';
+import routs from "../../common/routs.config";
+
 import './Header.scss';
 
 function Header({openModalForm}) {
+    const {pathname} = useLocation();
+    const index = routs.indexOf(pathname);
 
     return (
         <header className='header'>
@@ -16,26 +20,20 @@ function Header({openModalForm}) {
                             </NavLink>
                         </a>
                     </li>
-                    <li>
-                        <a className='nav__item' href='/services'>
-                            <NavLink to="/services">
-                                УСЛУГИ
-                            </NavLink>
-                        </a>
+                    <li className={routs[index] === '/services' ? 'nav__item nav__item__active nav__item__active-weight' : 'nav__item'}>
+                        <NavLink to="/services">
+                            УСЛУГИ
+                        </NavLink>
                     </li>
-                    <li>
-                        <a className='nav__item' href='/benefits'>
-                            <NavLink to="/benefits">
-                                ПРЕИМУЩЕСТВА
-                            </NavLink>
-                        </a>
+                    <li className={routs[index] === '/benefits' ? 'nav__item nav__item__active nav__item__active-weight' : 'nav__item'}>
+                        <NavLink to="/benefits">
+                            ПРЕИМУЩЕСТВА
+                        </NavLink>
                     </li>
-                    <li>
-                        <a className='nav__item' href='/contacts'>
-                            <NavLink to="/contacts">
-                                КОНТАКТЫ
-                            </NavLink>
-                        </a>
+                    <li className={routs[index] === '/contacts' ? 'nav__item nav__item__active nav__item__active-weight' : 'nav__item'}>
+                        <NavLink to="/contacts">
+                            КОНТАКТЫ
+                        </NavLink>
                     </li>
                 </ul>
             </nav>

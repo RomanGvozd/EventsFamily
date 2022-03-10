@@ -1,0 +1,169 @@
+.content__right-nav {
+  width: 12%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .right-nav__wrapper-num {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 150px;
+
+    .right-nav__num {
+      margin: 6px;
+      transition: 0.5s;
+      font-weight: normal;
+
+    }
+
+    .right-nav__num__active {
+      font-weight: bold;
+
+    }
+
+    .num__active {
+      width: 2px;
+      height: 20px;
+      background-color: #1A182F;
+      margin-right: 12px;
+      animation-duration: 0.5s;
+      animation-name: spawnNum__active;
+
+      @keyframes spawnNum__active {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+      }
+
+    }
+
+  }
+
+  .right-nav__wraperr-btn {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+
+    .right-nav__btn {
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      border: 2px solid #1A182F;
+      transition: 0.3s;
+
+    }
+
+    .right-nav__btn-left {
+      background: #1A182F26;
+      border: 2px solid #999;
+      margin-right: 10px;
+      position: relative;
+
+      &:hover {
+        background: rgba(26, 24, 47, 0.05);
+
+      }
+
+      &:active {
+        background: rgba(26, 24, 47, 0.15);
+
+      }
+
+      &::after {
+        background-color: #999;
+
+      }
+
+      &::before {
+        background-color: #999;
+
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 15px;
+        top: 18px;
+        width: 7px;
+        height: 2px;
+        transform: rotate(-45deg);
+
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 15px;
+        top: 22px;
+        width: 7px;
+        height: 2px;
+        transform: rotate(45deg);
+
+      }
+
+    }
+
+    .right-nav__btn-right {
+      background-color: #1A182F;
+      border: 2px solid #1A182F;
+      position: relative;
+
+      &:hover {
+        background: rgba(33, 30, 61, 0.8);
+        border: 2px solid rgba(33, 30, 61, 0.8);
+
+      }
+
+      &:active {
+        background: #1E1950;
+        border: 2px solid #1E1950;
+
+      }
+
+      &::after {
+        background-color: #fff;
+
+      }
+
+      &::before {
+        background-color: #fff;
+
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 15px;
+        top: 18px;
+        width: 7px;
+        height: 2px;
+        transform: rotate(45deg);
+
+      }
+
+      &::before { 
+        content: '';
+        position: absolute;
+        right: 15px;
+        top: 22px;
+        width: 7px;
+        height: 2px;
+        transform: rotate(-45deg);
+        
+      }
+
+    }
+
+  }
+
+}
+
+

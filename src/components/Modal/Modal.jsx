@@ -2,7 +2,8 @@ import React from 'react';
 
 import './Modal.scss';
 
-function Modal() {
+function Modal({handleSubmitModal}) {
+
     return (
         <div className='backgroung-modal'>
             <form className='modal'>
@@ -12,7 +13,10 @@ function Modal() {
                 <p className='modal__text'>
                     Мы свяжимся с Вами в ближайшее время.
                 </p>
-                <button className='modal__button'>
+                <button 
+                className='modal__button'
+                onClick={handleSubmitModal}
+                >
                     Хорошо
                 </button>
             </form>

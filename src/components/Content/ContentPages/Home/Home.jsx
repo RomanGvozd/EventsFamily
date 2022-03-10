@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Home.scss';
 
-function Home() {
+function Home({openModalForm}) {
     return (
         <section className='home'>
             <h1 className='home__title'>
@@ -14,7 +14,7 @@ function Home() {
             <p className='home__text'>
                 Наше агенство поможет Вам организовать мероприятие и сделать его незабываемым
             </p>
-            <button className='home__btn'>
+            <button className='home__button' onClick={openModalForm}>
                 Заказать мероприятие
             </button>
         </section>

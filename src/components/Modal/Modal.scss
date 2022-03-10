@@ -57,6 +57,17 @@
             align-items: center;
             color: #FFFFFF;
             margin-top: 25px;
+            transition: 0.3s;
+
+            &:hover {
+                background: rgba(33, 30, 61, 0.8);
+
+            }
+
+            &:active {
+                background: #1E1950;
+
+            }
             
         }
 

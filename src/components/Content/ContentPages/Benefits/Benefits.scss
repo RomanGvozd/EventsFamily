@@ -1,5 +1,6 @@
 .benefits {
-    min-width: 100%;
+    width: 100%;
+    height: 100%;
     background-image: url(./Images/Background_Benefits.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,17 +8,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: 1s;
 
     .benefits__logo1 {
-        font-family: AnastasiaScriptC;
+        font-family: 'AnastasiaScript', arial;
         font-size: 50px;
+        font-weight: normal; 
         line-height: 65px;
 
     }
     
     .benefits__logo2 {
         font-size: 30px;
+        font-weight: normal; 
         line-height: 36px;
         letter-spacing: 0.13em;
 
@@ -59,6 +61,7 @@
 
             .wrapper-item__logo {
                 font-size: 25px;
+                font-weight: normal; 
                 line-height: 30px;
                 letter-spacing: 0.05em;
                 margin-top: 20px;
@@ -67,6 +70,7 @@
 
             .wrapper-item__text {
                 font-size: 15px;
+                font-weight: normal; 
                 line-height: 18px;
                 margin-top: 20px;
                 
@@ -77,3 +81,5 @@
     }
 
 }
+
+

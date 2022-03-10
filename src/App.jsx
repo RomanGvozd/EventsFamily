@@ -18,23 +18,23 @@ function App() {
   }
 
   const openModal = () => {
-    setModal(true);
     setModalForm(false);
   }
 
-  const arr = [2, 34, 3, 8, 1, 5, 4]
-
-  console.log(arr.sort().toString())
+  const handleSubmitModal = () => {
+    setModal(false);
+  }
 
   return (
     <BrowserRouter>
-    {modal && <Modal/>}
-    {modalForm && <ModalForm openModal={openModal} />}
+    {modalForm && <ModalForm setModal={setModal} setModalForm={setModalForm} />}
+    {modal && <Modal handleSubmitModal={handleSubmitModal}/>}
+    
       <main className='main'>
         <Header
           openModalForm={openModalForm}
         />
-        <Content/>
+        <Content openModal={openModal} openModalForm={openModalForm}/>
       </main>
     </BrowserRouter>
   );
